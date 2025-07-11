@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+backend/data/fec_2018_part1.txt
+backend/data/fec_2018_part2.txt
+*.txt
