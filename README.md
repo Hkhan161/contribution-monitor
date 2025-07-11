@@ -60,16 +60,21 @@ A full-stack web app to search, analyze, and visualize political campaign contri
 ```
 political-monitor/
 ├── backend/
-│   ├── main.py         # FastAPI entrypoint
-│   └── utils/
-│       └── search.py   # Core fuzzy logic
+│   ├── main.py                # FastAPI entrypoint
+│   ├── utils/
+│   │   └── search.py          # Fuzzy search logic
+│   ├── ...                    # Other backend modules (engine, rules, etc.)
 ├── frontend/
 │   ├── src/
-│   │   └── App.tsx     # Main React app
-│   └── ...             # Vite/Tailwind config
-├── requirements.txt    # Backend dependencies
-├── Makefile
-└── README.md
+│   │   ├── App.tsx            # Main React app
+│   │   └── ...                # Other frontend source files
+│   ├── package.json           # Frontend dependencies
+│   ├── tailwind.config.js     # TailwindCSS config
+│   └── ...                    # Other config/build files
+├── requirements.txt           # Backend dependencies
+├── .gitignore                 # Ignore rules for Python, Node, data, etc.
+├── README.md                  # Project overview & docs
+└── ...                        # (Optional) Makefile, sample data, etc.
 ```
 
 ---
