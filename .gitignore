@@ -1,0 +1,22 @@
+# Python
+env*/
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Node
+frontend/node_modules/
+frontend/dist/
+frontend/.next/
+frontend/.cache/
+
+# OS
+.DS_Store
+
+# Data
+*.csv
+*.parquet
+*.tsv
+*.xlsx
+*.log

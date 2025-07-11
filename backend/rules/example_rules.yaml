@@ -1,0 +1,12 @@
+# backend/rules/example_rules.yaml
+- id: high_donation
+  condition: "TRANSACTION_AMT > 2700"
+  message: "Donation exceeds federal limit of $2700."
+
+- id: risky_occupation
+  condition: "OCCUPATION == 'ATTORNEY' and TRANSACTION_AMT > 1000"
+  message: "High-risk donation from legal professional."
+
+- id: restricted_state
+  condition: "STATE in ['NY', 'NJ', 'CA']"
+  message: "Donation made in a tightly regulated state."
